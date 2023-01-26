@@ -129,6 +129,11 @@ table {
   border-spacing: 0;
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 body {
   height: 100%;
   width: 100%;
