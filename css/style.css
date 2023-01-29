@@ -354,7 +354,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 960px;
-  margin: 0 auto 80px;
+  margin: 0 auto 10px;
   text-align: center;
 }
 
@@ -382,6 +382,135 @@ body {
 .section__text {
   font-family: "Roboto";
   color: #999999;
+  padding-bottom: 80px;
 }
 
 /* about start */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about__item {
+  position: relative;
+  width: 100%;
+  background-color: #95e1d3;
+}
+
+.about__item:hover .about__img {
+  transform: translate(-10px, -10px);
+}
+
+.about__item:hover .about__img img {
+  opacity: 0.1;
+}
+
+.about__item:hover .about__content {
+  transform: translate(-20px, -30px);
+  opacity: 1;
+}
+
+.about__img {
+  background-image: linear-gradient(to bottom,#f48b82, #fbe389);
+  transition: transform 0.1s linear;
+}
+
+.about__img img {
+  transition: opacity 0.1s linear;
+}
+
+.about__content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  transform: translate(0, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.about__text {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* facts start */
+
+.facts {
+  background-color: #95e1d3;
+}
+
+.facts__inner {
+  display: flex;
+}
+
+.facts__content {
+  width: 100%;
+  padding: 85px 25px;
+  text-align: center;
+  color: #ffffff;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.facts__content:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.facts__header {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.facts__text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* services start */
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  display: flex;
+  align-items: flex-start;
+  width: 33.33%;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 40px 0;
+}
+
+.services-item:first-child {
+  padding-top: 0;
+}
+
+.services-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.services__img {
+  padding: 0 25px;
+}
+
+.services__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 400;
+}
+
+.services__text {
+  color: #999999;
+  font-family: "Roboto";
+}
+
