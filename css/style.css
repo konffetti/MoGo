@@ -474,26 +474,26 @@ body {
 
 /* services start */
 
-.services {
+.services__list {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 40px 0;
+}
+
+.services__list:first-child {
+  padding-top: 0;
+}
+
+.services__list:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .services__item {
   display: flex;
   align-items: flex-start;
   width: 33.33%;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 40px 0;
-}
-
-.services-item:first-child {
-  padding-top: 0;
-}
-
-.services-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
 }
 
 .services__img {
@@ -514,4 +514,21 @@ body {
   font-family: "Roboto";
 }
 
-/* services end */
+/* devices start */
+
+.devices {
+  background: url(../img/devices-bg.jpg) center/cover no-repeat;
+  padding-top: 100px;
+}
+
+.devices__content {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.iphone {
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+}
